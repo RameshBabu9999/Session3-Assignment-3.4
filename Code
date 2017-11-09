@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+SignUpForm</title>
+<style>
+body{
+	background-image:url(https://pettus.files.wordpress.com/2011/12/signup-now.jpg);
+	background-position: top-right;
+	}
+input[type=text] {
+	width : 70%;
+	padding: 14px 12px;
+	margin: 5px ;
+	display: inline-block;
+	border: 1px solid blue ;	
+}
+.subbtn{
+	background-color: transparent;
+	color: black;
+	font-size: 15px;
+}
+input:disabled{
+	cursor: not-allowed;
+}
+</style>
+</head>
+<body>
+<h1>SignUpForm</h1>
+<form>
+	<div class="Name" style="color:orange" >
+  <b>First name:</b><br>
+  <input type="text" name="firstname" value="Ramesh" required >
+  <br>
+  <b>Last name:</b><br>
+  <input type="text" name="lastname" Value="Emandi" >
+</div>
+  <br>
+  Gender:
+  <input type="radio" name="gender" value="male">Male
+  <input type="radio" name="gender" value="Female">Female
+  <input type="radio" name="gender" value="Other">Other
+ <br>
+Email:<br>
+<input type="text" required ><br>
+Password:<br>
+<input type="text" value="Enter password"><br>
+Caste:<br>
+<input type="text" disabled><br>
+<input type="checkbox" Value="I Agree to terms & Conditions">I Agree to terms & Conditions.<br>
+  <br>
+  <button class="subbtn">Submit</button>
+</form>
+</body>
+</html>
